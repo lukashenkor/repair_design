@@ -1,4 +1,4 @@
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 1300px)
   html
     font-size: 12px
   .nav
@@ -15,6 +15,8 @@
       margin-left: 0
 
 @media screen and (max-width: 570px)
+  .container
+    width: 90%
   .contacts
     &__phone
       margin-right: 1.3rem
@@ -23,24 +25,68 @@
     &__button
       display: none
   .title
+    width: 100%
+    max-width: 383px
     font-size: 1.9rem
     margin-bottom: 1rem
   .hero
+    height: 85vh
     &__scroll-down
       display: none
     &__content
-      max-width: 22.86rem
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 100%
+      margin: auto
+      //max-width: 22.86rem
     &__text
-      width: 26.5rem
+      //width: 26.5rem
+      width: 100%
+      max-width: 383px
       font-size: 1.5rem
       margin-bottom: 2.8rem
       line-height: 2rem
     &__button
       font-size: 1.1rem
-      width: 28rem
+      width: 100%
+      max-width: 383px
+      //width: 28rem
       display: block
       min-width: 22.86rem
-      margin-bottom: 2.1rem
+      margin: 0 0 2.1rem 0
+
+//@media screen and (max-width: 570px)
+//  .container
+//    width: 95%
+//    max-width: 300px
+//  .contacts
+//    &__phone
+//      margin-right: 1.3rem
+//      color: $light
+//      text-decoration: none
+//    &__button
+//      display: none
+//  .title
+//    font-size: 1.9rem
+//    margin-bottom: 1rem
+//  .hero
+//    &__scroll-down
+//      display: none
+//    &__content
+//      margin: auto
+//      max-width: 22.86rem
+//    &__text
+//      width: 26.5rem
+//      font-size: 1.5rem
+//      margin-bottom: 2.8rem
+//      line-height: 2rem
+//    &__button
+//      font-size: 1.1rem
+//      width: 28rem
+//      display: block
+//      min-width: 22.86rem
+//      margin-bottom: 2.1rem
 
 @media screen and (max-height: 520px)
   .hero
