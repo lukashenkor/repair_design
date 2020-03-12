@@ -401,6 +401,24 @@ img {
 input, button {
   outline-style: none; }
 
+.scroll-up {
+  padding: 1rem;
+  margin: 1rem;
+  right: 100%;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+  border: 1px solid #131313;
+  cursor: pointer; }
+  .scroll-up:hover {
+    background: #131313;
+    color: #fff; }
+
+.visible {
+  opacity: 1;
+  visibility: visible; }
+
 .section {
   padding: 60px 0; }
   .section-title {
