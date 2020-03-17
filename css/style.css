@@ -835,6 +835,22 @@ input, button {
     margin-bottom: 5rem; }
   .card__pricetag {
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
+  .col-50 {
+    width: 100%;
+    margin-bottom: 2.857rem; }
+  .swiper-slide__heading {
+    font-size: 1rem; }
+  .swiper-slide-pagination {
+    margin-bottom: 1rem; }
+  .swiper-slide__text {
+    flex-basis: 50%; }
+    .swiper-slide__text:last-of-type {
+      margin-bottom: 2.9rem; }
+  .section-title__text {
+    margin-right: 2.857rem;
+    font-size: 1rem; }
+  .section-title__word:after {
+    display: none; }
   .card__text {
     margin-left: 0; } }
 
@@ -854,6 +870,8 @@ input, button {
     margin-bottom: 1rem; }
   .hero {
     height: 476px; }
+    .hero:after {
+      display: none; }
     .hero__scroll-down {
       display: none; }
     .hero__content {
