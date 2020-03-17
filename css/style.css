@@ -428,17 +428,19 @@ input, button {
   padding: 1rem;
   margin: 1rem;
   right: 100%;
-  background: transparent;
   opacity: 0;
   visibility: hidden;
   transition: 0.2s;
   border: none;
   cursor: pointer;
-  color: #131313;
-  font-size: 1.3rem; }
+  color: #fff;
+  background-color: #131313;
+  font-size: 1.3rem;
+  box-shadow: 5px 5px 10px rgba(19, 19, 19, 0.3); }
   .scroll-up:hover {
     background: #131313;
-    color: #fff; }
+    color: #E3B873;
+    box-shadow: none; }
 
 .visible {
   opacity: 1;

@@ -23,18 +23,20 @@ input, button
   padding: 1rem
   margin: 1rem
   right: 100%
-  background: transparent
   opacity: 0
   visibility: hidden
   transition: 0.2s
   border: none
   cursor: pointer
-  color: $dark
+  color: $light
+  background-color: $dark
   font-size: 1.3rem
+  box-shadow: 5px 5px 10px rgba($dark, 0.3)
 
   &:hover
     background: $dark
-    color: $light
+    color: $primary
+    box-shadow: none
 
 .visible
   opacity: 1
