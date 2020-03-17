@@ -771,9 +771,6 @@ input, button {
   width: 0.714rem;
   height: 0.714rem; }
 
-.swiper-slide swiper-slide-active {
-  left: 50px; }
-
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
