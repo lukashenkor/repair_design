@@ -57,5 +57,19 @@ $(document).ready(function () {
     next.css('left', prev.width() + 20 + bullets.width() + 20);
     bullets.css('left', prev.width() + 20);
 
+
+    //initialize swiper when document ready
+    var mySwiper2 = new Swiper ('.steps__swiper-container', {
+        // loop: true,
+        pagination: {
+            el: '.steps__swiper-pagination',
+            type: 'fraction',
+        },
+        navigation: {
+            nextEl: '.steps__swiper-button-next',
+            prevEl: '.steps__swiper-button-prev',
+        },
+    });
+    new WOW().init();
 });
 
