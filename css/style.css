@@ -390,9 +390,6 @@ template {
   align-items: flex-start;
   justify-content: space-between; }
 
-.col-30 {
-  width: 30%; }
-
 .col-40 {
   width: 40%; }
 
