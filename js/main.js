@@ -92,7 +92,8 @@ $(document).ready(function () {
         messages: {
             userName: {
                 required: "Заполните поле",
-                minlength: "Имя не короче 2 символов"
+                minlength: "Имя не короче 2 символов",
+                maxlength: "Имя не больше 15 символов"
             },
             userPhone: "Заполните поле",
             userEmail: {
