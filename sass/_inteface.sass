@@ -50,8 +50,11 @@
           background: $primary url("../img/check.svg") no-repeat center / 0.8rem
 
   &__label
+    font-size: 1.142rem
     display: flex
     align-items: center
+    &--center
+      justify-content: center
 
     &::before
       content: ''
@@ -61,3 +64,9 @@
       border-radius: 1px
       cursor: pointer
       margin-right: 0.64rem
+div
+  &.invalid
+    color: tomato
+input
+  &.invalid
+    border-bottom: 1px solid tomato

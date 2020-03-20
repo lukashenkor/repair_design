@@ -26,20 +26,19 @@ $(document).ready(function () {
     });
 
     scrollUp.on('click', function () {
-        $('html').animate({ scrollTop: 0 }, 1100);
+        $('html').animate({scrollTop: 0}, 1100);
     });
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > 0) {
             scrollUp.addClass('visible');
-        }
-        else {
+        } else {
             scrollUp.removeClass('visible');
         }
     });
 
     //initialize swiper when document ready
-    var mySwiper = new Swiper ('.swiper-container', {
+    var mySwiper = new Swiper('.swiper-container', {
         loop: true,
         pagination: {
             el: '.swiper-pagination',
@@ -59,7 +58,7 @@ $(document).ready(function () {
 
 
     //initialize swiper when document ready
-    var mySwiper2 = new Swiper ('.steps__swiper-container', {
+    var mySwiper2 = new Swiper('.steps__swiper-container', {
         // loop: true,
         pagination: {
             el: '.steps__swiper-pagination',
@@ -71,5 +70,40 @@ $(document).ready(function () {
         },
     });
     new WOW().init();
+
+    // Валидация формы
+    $('.modal__form').validate({
+        errorElement: "div",
+        errorClass: "invalid",
+        rules: {
+            // simple rule, converted to {required:true}
+            userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            },
+            userPhone: "required",
+            // compound rule
+            userEmail: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            userName: {
+                required: "Заполните поле",
+                minlength: "Имя не короче 2 символов"
+            },
+            userPhone: "Заполните поле",
+            userEmail: {
+                required: "Заполните поле",
+                email: "Введите корректный email"
+            }
+        }
+    });
+
+    // Маска для номера телефона
+    $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+
 });
 
