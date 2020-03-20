@@ -79,8 +79,7 @@ $(document).ready(function () {
             // simple rule, converted to {required:true}
             userName: {
                 required: true,
-                minlength: 2,
-                maxlength: 15
+                minlength: 2
             },
             userPhone: "required",
             // compound rule
@@ -92,10 +91,59 @@ $(document).ready(function () {
         messages: {
             userName: {
                 required: "Заполните поле",
+                minlength: "Имя не короче 2 символов"
+            },
+            userPhone: "Заполните поле",
+            userEmail: {
+                required: "Заполните поле",
+                email: "Введите корректный email"
+            }
+        }
+    });
+    $('.control__form').validate({
+        errorElement: "div",
+        errorClass: "invalid",
+        rules: {
+            userName: {
+                required: true,
+                minlength: 2
+            },
+            userPhone: "required",
+        },
+        messages: {
+            userName: {
+                required: "Заполните поле",
+                minlength: "Имя не короче 2 символов"
+            },
+            userPhone: "Заполните поле",
+        }
+    });
+    $('.footer__form').validate({
+        errorElement: "div",
+        errorClass: "invalid",
+        rules: {
+            // simple rule, converted to {required:true}
+            userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+            },
+            userPhone: "required",
+            // compound rule
+            userEmail: {
+                required: true,
+                email: true
+            },
+            userQuestion: "required"
+        },
+        messages: {
+            userName: {
+                required: "Заполните поле",
                 minlength: "Имя не короче 2 символов",
                 maxlength: "Имя не больше 15 символов"
             },
             userPhone: "Заполните поле",
+            userQuestion: "Заполните поле",
             userEmail: {
                 required: "Заполните поле",
                 email: "Введите корректный email"
