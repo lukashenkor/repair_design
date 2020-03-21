@@ -961,6 +961,18 @@ input, button {
     text-align: center;
     margin-bottom: 3.214rem;
     margin-top: 0; }
+    .footer__title--primary {
+      line-height: 2rem;
+      color: #E3B873;
+      max-width: 39rem;
+      margin: auto; }
+  .footer__icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.786rem;
+    margin-bottom: 3.143rem; }
+    .footer__icons > img {
+      margin-right: 1.071rem; }
   .footer__policy {
     color: #fff; }
   .footer__form {
@@ -985,6 +997,15 @@ input, button {
   .footer__button {
     margin: auto;
     padding: 1.285rem 4.785rem; }
+  .footer__map {
+    max-width: 66.07rem;
+    margin: auto;
+    margin-bottom: 4.714rem;
+    min-height: 465px;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+    /* Firefox 3.5+ */
+    -webkit-filter: grayscale(100%);
+    /* Chrome 19+ & Safari 6+ */ }
 
 @media screen and (max-width: 1300px) {
   html {
