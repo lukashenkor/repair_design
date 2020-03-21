@@ -971,7 +971,7 @@ input, button {
     justify-content: center;
     margin-top: 1.786rem;
     margin-bottom: 3.143rem; }
-    .footer__icons > img {
+    .footer__icons > a {
       margin-right: 1.071rem; }
   .footer__policy {
     color: #fff; }
