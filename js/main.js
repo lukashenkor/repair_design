@@ -73,20 +73,26 @@ $(document).ready(function () {
 
     // Валидация формы
     $('.modal__form').validate({
+        errorPlacement: function (error, element) {
+            if (element.attr("name") === "modal__policyCheckbox") {
+                return element.next('label').append(error);
+            }
+
+            error.insertAfter($(element));
+        },
         errorElement: "div",
         errorClass: "invalid",
         rules: {
-            // simple rule, converted to {required:true}
             userName: {
                 required: true,
                 minlength: 2
             },
             userPhone: "required",
-            // compound rule
             userEmail: {
                 required: true,
                 email: true
-            }
+            },
+            modal__policyCheckbox: "required"
         },
         messages: {
             userName: {
@@ -97,10 +103,32 @@ $(document).ready(function () {
             userEmail: {
                 required: "Заполните поле",
                 email: "Введите корректный email"
-            }
+            },
+            modal__policyCheckbox: "Установите флажок"
+        },
+        submitHandler: function (form) {
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    alert("Форма отправлена. Мы свяжемся с Вами через 10 минут.");
+                    $(form)[0].reset();
+                    modal.removeClass('modal--visible');
+                }
+            })
         }
     });
+
+
     $('.control__form').validate({
+        errorPlacement: function (error, element) {
+            if (element.attr("name") === "control__policyCheckbox") {
+                return element.next('label').append(error);
+            }
+
+            error.insertAfter($(element));
+        },
         errorElement: "div",
         errorClass: "invalid",
         rules: {
@@ -109,6 +137,7 @@ $(document).ready(function () {
                 minlength: 2
             },
             userPhone: "required",
+            control__policyCheckbox: "required"
         },
         messages: {
             userName: {
@@ -116,9 +145,31 @@ $(document).ready(function () {
                 minlength: "Имя не короче 2 символов"
             },
             userPhone: "Заполните поле",
+            control__policyCheckbox: "Установите флажок",
+        },
+        submitHandler: function (form) {
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    alert("Форма отправлена. Мы свяжемся с Вами через 10 минут.");
+                    $(form)[0].reset();
+                }
+            })
         }
+
     });
+
+
     $('.footer__form').validate({
+        errorPlacement: function (error, element) {
+            if (element.attr("name") === "footer__policyCheckbox") {
+                return element.next('label').append(error);
+            }
+
+            error.insertAfter($(element));
+        },
         errorElement: "div",
         errorClass: "invalid",
         rules: {
@@ -134,7 +185,8 @@ $(document).ready(function () {
                 required: true,
                 email: true
             },
-            userQuestion: "required"
+            userQuestion: "required",
+            footer__policyCheckbox: "required"
         },
         messages: {
             userName: {
@@ -147,8 +199,21 @@ $(document).ready(function () {
             userEmail: {
                 required: "Заполните поле",
                 email: "Введите корректный email"
-            }
+            },
+            footer__policyCheckbox: "Установите флажок"
+        },
+        submitHandler: function (form) {
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    alert("Форма отправлена. Мы свяжемся с Вами через 10 минут.");
+                    $(form)[0].reset();
+                }
+            })
         }
+
     });
 
     // Маска для номера телефона
