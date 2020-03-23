@@ -98,6 +98,25 @@
       min-width: 22.86rem
       margin: 0 0 2.1rem 0
 
+@media screen and (max-width: 540px)
+  .control
+    background-color: $dark
+    color: $light
+    &__button
+      order: 5
+    &__label
+      color: $secondary
+    &__input
+      color: $light
+      &::placeholder
+        color: $light
+      &-group
+        flex-basis: 100%
+        &:first-of-type
+          margin-bottom: 4.5rem
+    &__text
+      color: $light
+
 @media screen and (max-height: 520px)
   .hero
     &__scroll-down

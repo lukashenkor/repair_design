@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 $(document).ready(function () {
     var modal = $('.modal'),
+        success = $('.success'),
+        successClose = $('.success__close'),
+        successBtn = $('.success__button');
         modalBtn = $('[data-toggle=modal]'),
         scrollUp = $('.scroll-up'),
         closeBtn = $('.modal__close');
@@ -23,6 +26,14 @@ $(document).ready(function () {
     });
     closeBtn.on('click', function () {
         modal.toggleClass('modal--visible');
+    });
+
+    successClose.on('click', function () {
+        success.toggleClass('success--visible');
+    });
+
+    successBtn.on('click', function () {
+        success.toggleClass('success--visible');
     });
 
     scrollUp.on('click', function () {
@@ -112,9 +123,9 @@ $(document).ready(function () {
                 url: "send.php",
                 data: $(form).serialize(),
                 success: function (response) {
-                    alert("Форма отправлена. Мы свяжемся с Вами через 10 минут.");
                     $(form)[0].reset();
                     modal.removeClass('modal--visible');
+                    success.toggleClass('success--visible');
                 }
             })
         }
@@ -153,8 +164,8 @@ $(document).ready(function () {
                 url: "send.php",
                 data: $(form).serialize(),
                 success: function (response) {
-                    alert("Форма отправлена. Мы свяжемся с Вами через 10 минут.");
                     $(form)[0].reset();
+                    success.toggleClass('success--visible');
                 }
             })
         }
@@ -208,8 +219,8 @@ $(document).ready(function () {
                 url: "send.php",
                 data: $(form).serialize(),
                 success: function (response) {
-                    alert("Форма отправлена. Мы свяжемся с Вами через 10 минут.");
                     $(form)[0].reset();
+                    success.toggleClass('success--visible');
                 }
             })
         }
