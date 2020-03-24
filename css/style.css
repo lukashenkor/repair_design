@@ -1079,10 +1079,17 @@ input, button {
   .row {
     flex-direction: column;
     align-items: center; }
-  .types__card {
-    margin-bottom: 5rem; }
-  .design__card {
-    margin-bottom: 5rem; }
+  .types {
+    padding-top: 0; }
+    .types__card {
+      margin-bottom: 5rem; }
+  .design {
+    background-color: #181818;
+    color: #fff; }
+    .design__section-title__text {
+      margin: auto; }
+    .design__card {
+      margin-bottom: 5rem; }
   .card__pricetag {
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
   .col-50 {
@@ -1096,7 +1103,7 @@ input, button {
     flex-basis: 50%; }
     .swiper-slide__text:last-of-type {
       margin-bottom: 2.9rem; }
-  .section-title__text {
+  .projects__section-title__text {
     margin-right: 2.857rem;
     font-size: 1rem; }
   .section-title__word:after {
@@ -1142,18 +1149,28 @@ input, button {
       max-width: 383px;
       display: block;
       min-width: 22.86rem;
-      margin: 0 0 2.1rem 0; } }
-
-@media screen and (max-width: 540px) {
+      margin: 0 0 2.1rem 0; }
+  .types {
+    margin-top: 5rem; }
   .control {
+    padding-bottom: 0;
     background-color: #131313;
     color: #fff; }
+    .control__video {
+      max-height: 30rem;
+      min-height: 20rem; }
+    .control__policy__label {
+      justify-content: flex-start;
+      margin-bottom: 4.5rem; }
     .control__button {
-      order: 5; }
+      width: 100%;
+      order: 5;
+      margin-bottom: -1.8rem; }
     .control__label {
       color: #959595; }
     .control__input {
-      color: #fff; }
+      color: #fff;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
       .control__input::-webkit-input-placeholder {
         color: #fff; }
       .control__input::-moz-placeholder {
@@ -1169,7 +1186,33 @@ input, button {
         .control__input-group:first-of-type {
           margin-bottom: 4.5rem; }
     .control__text {
-      color: #fff; } }
+      color: #fff; }
+  .design {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 2rem;
+    background-color: #181818; }
+    .design__section-title__text {
+      margin-bottom: 2.857rem; }
+  .footer {
+    background: none;
+    background-color: #181818; }
+    .footer-block {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column-reverse; }
+    .footer__button {
+      width: 100%; }
+    .footer__policy__label {
+      justify-content: flex-start; }
+    .footer__wrap {
+      margin-top: 0;
+      padding: 0; }
+    .footer__input-group {
+      flex-basis: 100%;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+    .footer__map {
+      display: block; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {

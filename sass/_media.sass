@@ -19,9 +19,15 @@
     flex-direction: column
     align-items: center
   .types
+    padding-top: 0
     &__card
       margin-bottom: 5rem
   .design
+    background-color: $black
+    color: $light
+    &__section-title
+      &__text
+        margin: auto
     &__card
       margin-bottom: 5rem
   .card
@@ -40,11 +46,14 @@
         flex-basis: 50%
         &:last-of-type
           margin-bottom: 2.9rem
+  .projects
+    &__section
+      &-title
+        &__text
+          margin-right: 2.857rem
+          font-size: 1rem
   .section
     &-title
-      &__text
-        margin-right: 2.857rem
-        font-size: 1rem
       &__word
         &:after
           display: none
@@ -93,21 +102,31 @@
       font-size: 1.1rem
       width: 100%
       max-width: 383px
-      //width: 28rem
       display: block
       min-width: 22.86rem
       margin: 0 0 2.1rem 0
-
-@media screen and (max-width: 540px)
+  .types
+    margin-top: 5rem
   .control
+    padding-bottom: 0
     background-color: $dark
     color: $light
+    &__video
+      max-height: 30rem
+      min-height: 20rem
+    &__policy
+      &__label
+        justify-content: flex-start
+        margin-bottom: 4.5rem
     &__button
+      width: 100%
       order: 5
+      margin-bottom: -1.8rem
     &__label
       color: $secondary
     &__input
       color: $light
+      border-bottom: 1px solid rgba($light, 0.3)
       &::placeholder
         color: $light
       &-group
@@ -116,6 +135,34 @@
           margin-bottom: 4.5rem
     &__text
       color: $light
+  .design
+    margin-bottom: 0
+    padding-bottom: 0
+    padding-top: 2rem
+    background-color: $black
+    &__section
+      &-title__text
+        margin-bottom: 2.857rem
+  .footer
+    background: none
+    background-color: $black
+    &-block
+      display: flex
+      flex-wrap: wrap
+      flex-direction: column-reverse
+    &__button
+      width: 100%
+    &__policy__label
+      justify-content: flex-start
+    &__wrap
+      margin-top: 0
+      padding: 0
+    &__input-group
+      flex-basis: 100%
+      border-bottom: 1px solid rgba($light, 0.3)
+    &__map
+      display: block
+
 
 @media screen and (max-height: 520px)
   .hero
