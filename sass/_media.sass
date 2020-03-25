@@ -64,6 +64,12 @@
       margin-left: 0
 
 @media screen and (max-width: 570px)
+  .map-container
+    max-width: 35rem
+    height: 25rem!important
+    margin-bottom: 1rem
+  .ymaps-2-1-76-map, .ymaps-2-1-76-i-ua_js_yes, .ymaps-2-1-76-map-bg, .ymaps-2-1-76-islets_map-lang-ru
+    height: 25rem!important
   .container
     width: 90%
   .contacts
@@ -160,11 +166,39 @@
     &__input-group
       flex-basis: 100%
       border-bottom: 1px solid rgba($light, 0.3)
-    &__map
-      display: block
+
+@media screen and (max-width: 470px)
+  .map-container
+    max-width: 27rem
+  .ymaps-2-1-76-map, .ymaps-2-1-76-i-ua_js_yes, .ymaps-2-1-76-map-bg, .ymaps-2-1-76-islets_map-lang-ru
+    height: 21rem!important
+
+@media screen and (max-width: 360px)
+  .map-container
+    max-width: 22rem
+  .ymaps-2-1-76-map, .ymaps-2-1-76-i-ua_js_yes, .ymaps-2-1-76-map-bg, .ymaps-2-1-76-islets_map-lang-ru
+    height: 18rem!important
 
 
 @media screen and (max-height: 520px)
   .hero
     &__scroll-down
       display: none
+
+@media screen and (max-height: 460px)
+  html
+    font-size: 10px
+  .modal
+    &__button
+      padding: 0.5rem 1rem
+    &__policy
+      margin-bottom: 1rem
+    &__title
+      margin-bottom: 0.5rem
+    &__input-group
+      margin-bottom: 0.5rem
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+  .hero
+    &__container
+      margin-top: 1rem

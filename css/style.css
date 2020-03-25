@@ -432,13 +432,16 @@ img {
 input, button {
   outline-style: none; }
 
+.map-container {
+  max-width: 1200px;
+  margin: auto; }
+
 .scroll-up {
   position: fixed;
   bottom: 0;
   left: 0;
   padding: 1rem;
   margin: 1rem;
-  right: 100%;
   opacity: 0;
   visibility: hidden;
   transition: 0.2s;
@@ -1001,6 +1004,7 @@ input, button {
     margin: auto;
     padding: 1.285rem 4.785rem; }
   .footer__map {
+    width: 100%;
     max-width: 66.07rem;
     margin: auto;
     margin-bottom: 4.714rem;
@@ -1112,6 +1116,12 @@ input, button {
     margin-left: 0; } }
 
 @media screen and (max-width: 570px) {
+  .map-container {
+    max-width: 35rem;
+    height: 25rem !important;
+    margin-bottom: 1rem; }
+  .ymaps-2-1-76-map, .ymaps-2-1-76-i-ua_js_yes, .ymaps-2-1-76-map-bg, .ymaps-2-1-76-islets_map-lang-ru {
+    height: 25rem !important; }
   .container {
     width: 90%; }
   .contacts__phone {
@@ -1210,10 +1220,36 @@ input, button {
       padding: 0; }
     .footer__input-group {
       flex-basis: 100%;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-    .footer__map {
-      display: block; } }
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3); } }
+
+@media screen and (max-width: 470px) {
+  .map-container {
+    max-width: 27rem; }
+  .ymaps-2-1-76-map, .ymaps-2-1-76-i-ua_js_yes, .ymaps-2-1-76-map-bg, .ymaps-2-1-76-islets_map-lang-ru {
+    height: 21rem !important; } }
+
+@media screen and (max-width: 360px) {
+  .map-container {
+    max-width: 22rem; }
+  .ymaps-2-1-76-map, .ymaps-2-1-76-i-ua_js_yes, .ymaps-2-1-76-map-bg, .ymaps-2-1-76-islets_map-lang-ru {
+    height: 18rem !important; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (max-height: 460px) {
+  html {
+    font-size: 10px; }
+  .modal__button {
+    padding: 0.5rem 1rem; }
+  .modal__policy {
+    margin-bottom: 1rem; }
+  .modal__title {
+    margin-bottom: 0.5rem; }
+  .modal__input-group {
+    margin-bottom: 0.5rem; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .hero__container {
+    margin-top: 1rem; } }

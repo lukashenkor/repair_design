@@ -233,11 +233,14 @@ $(document).ready(function () {
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
                 center: [55.751574, 37.573856],
-                zoom: 9
+                zoom: 9,
+                controls: []
             }, {
                 searchControlProvider: 'yandex#search'
-            }),
-
+            }),/*
+            myMap.controls.add('zoomControl', {
+                size: "small"
+        }),*/
             // Создаём макет содержимого.
             MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
                 '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
@@ -251,7 +254,7 @@ $(document).ready(function () {
                 // Необходимо указать данный тип макета.
                 iconLayout: 'default#image',
                 // Своё изображение иконки метки.
-                iconImageHref: 'img/my-face.gif',
+                iconImageHref: 'img/my-face.jpg',
                 // Размеры метки.
                 iconImageSize: [32, 32],
                 // Смещение левого верхнего угла иконки относительно

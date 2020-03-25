@@ -40,7 +40,7 @@
       <a href="#" class="instagram__link">Instagram</a>
 
     </div>
-    <div class="container">
+    <div class="container hero__container">
       <div class="hero__content">
         <h1 class="title hero__title wow fadeInLeft" data-wow-delay="0.1s">Турецкий ремонт
           в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
@@ -68,10 +68,7 @@
             </h2>
             <!-- /.section-title__heading -->
             <p class="section-title__text projects__section-title__text">На сайте представлена ​​лишь небольшая часть работ, выполняемых
-              нашей компанией. За
-              14
-              лет работы
-              на строительном рынке мы осчастливили более 1000 семей</p>
+              нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей</p>
           </div>
           <!-- /.section-title -->
 
@@ -166,13 +163,13 @@
             <div class="swiper-wrapper swiper-no-swiping">
               <!-- Slides -->
               <div class="swiper-slide">
-                <img src="img/project.jpg" alt="">
+                <img data-src="img/project.jpg" class="lazyload" alt="">
               </div>
               <div class="swiper-slide">
-                <img src="img/project.jpg" alt="">
+                <img data-src="img/project.jpg" class="lazyload" alt="">
               </div>
               <div class="swiper-slide">
-                <img src="img/project.jpg" alt="">
+                <img data-src="img/project.jpg" class="lazyload" alt="">
               </div>
             </div>
           </div>
@@ -240,7 +237,8 @@
       <!-- /.section-title -->
       <div class="row">
         <div class="col-30">
-          <div class="card types__card wow fadeIn" data-wow-duration="0.5s"><img src="img/types/type-1.jpg" alt="" class="card__image">
+          <div class="card types__card wow fadeIn" data-wow-duration="0.5s"><img data-src="img/types/type-1.jpg" alt=""
+                                                                                 class="card__image lazyload">
             <!-- /.card__image -->
             <div class="card__text">
               <h3 class="card__title">Косметический ремонт</h3>
@@ -264,7 +262,8 @@
         </div>
         <!-- /.col -->
         <div class="col-30">
-          <div class="card types__card wow fadeIn" data-wow-duration="1s"><img src="img/types/type-2.jpg" alt="" class="card__image">
+          <div class="card types__card wow fadeIn" data-wow-duration="1s"><img data-src="img/types/type-2.jpg" alt=""
+                                                                               class="lazyload card__image">
             <!-- /.card__image -->
             <div class="card__text">
               <h3 class="card__title">Капитальный ремонт</h3>
@@ -288,7 +287,8 @@
         </div>
         <!-- /.col -->
         <div class="col-30">
-          <div class="card types__card wow fadeIn" data-wow-duration="1.5s"><img src="img/types/type-3.jpg" alt="" class="card__image">
+          <div class="card types__card wow fadeIn" data-wow-duration="1.5s"><img data-src="img/types/type-3.jpg" alt=""
+                                                                                 class="lazyload card__image">
             <!-- /.card__image -->
             <div class="card__text">
               <h3 class="card__title">Дизайнерский ремонт</h3>
@@ -334,7 +334,8 @@
       <!-- /.section-title -->
       <div class="row">
         <div class="col-30">
-          <div class="card design__card wow fadeIn" data-wow-duration="0.5s"><img src="img/design/design-1.jpg" alt="" class="card__image">
+          <div class="card design__card wow fadeIn" data-wow-duration="0.5s"><img data-src="img/design/design-1.jpg" alt=""
+                                                                                  class="lazyload card__image">
             <!-- /.card__image -->
             <div class="card__text">
               <h3 class="card__title">Минимальный</h3>
@@ -355,7 +356,8 @@
         </div>
         <!-- /.col -->
         <div class="col-30">
-          <div class="card design__card wow fadeIn" data-wow-duration="1s"><img src="img/design/design-2.jpg" alt="" class="card__image">
+          <div class="card design__card wow fadeIn" data-wow-duration="1s"><img data-src="img/design/design-2.jpg" alt=""
+                                                                                class="lazyload card__image">
             <!-- /.card__image -->
             <div class="card__text">
               <h3 class="card__title">Стандартный</h3>
@@ -379,7 +381,8 @@
         </div>
         <!-- /.col -->
         <div class="col-30">
-          <div class="card design__card wow fadeIn" data-wow-duration="1.5s"><img src="img/design/design-3.jpg" alt="" class="card__image">
+          <div class="card design__card wow fadeIn" data-wow-duration="1.5s"><img data-src="img/design/design-3.jpg" alt=""
+                                                                                  class="lazyload card__image">
             <!-- /.card__image -->
             <div class="card__text">
               <h3 class="card__title">Полный</h3>
@@ -413,72 +416,6 @@
     <!-- /.container -->
   </section>
   <!-- /.section design -->
-
-  <!--  <section class="section section-dark steps">-->
-  <!--    <div class="container">-->
-  <!--      <div class="row">-->
-  <!--        <div class="col-30">-->
-  <!--          <div class="section-suptitle">как мы работаем</div>-->
-  <!--          <div class="section-title section-title&#45;&#45;left">-->
-  <!--            <h2 class="steps__section-title__heading section-title__heading section-title__heading&#45;&#45;primary">6 шагов <span-->
-  <!--                class="section-title__word">до-->
-  <!--              цели</span>-->
-  <!--            </h2>-->
-  <!--            &lt;!&ndash; /.section-title__heading &ndash;&gt;-->
-  <!--          </div>-->
-  <!--          &lt;!&ndash; /.section-title &ndash;&gt;-->
-
-  <!--          &lt;!&ndash; Slider main container &ndash;&gt;-->
-  <!--          <div class="steps__swiper-container swiper-container">-->
-  <!--            &lt;!&ndash; If we need pagination &ndash;&gt;-->
-  <!--            &lt;!&ndash; Additional required wrapper &ndash;&gt;-->
-  <!--            <div class="swiper-wrapper swiper-no-swiping">-->
-  <!--              &lt;!&ndash; Slides &ndash;&gt;-->
-  <!--              <div class="swiper-slide">-->
-  <!--                <div class="steps__swiper-pagination swiper-pagination"></div>-->
-  <!--                <div class="swiper-slide__text steps__swiper-slide__text">-->
-  <!--                  <h3 class="swiper-slide__heading steps__swiper-slide__heading">Выезд на замеры помещения</h3>-->
-  <!--                  <span class="swiper-slide__value steps__swiper-slide__value"><p>После вашего звонка мы идем к вам, чтобы-->
-  <!--                    проконсультироваться и измерить-->
-  <!--                    помещения вашей квартиры.Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>-->
-  <!--                    Оценщик приходит, чтобы измерить комнату.<br> Он проконсультирует вас по вопросам техники ремонта, дизайна-->
-  <!--                      квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</span>-->
-  <!--                </div>-->
-  <!--                &lt;!&ndash; /.swiper-slide__text &ndash;&gt;-->
-  <!--              </div>-->
-  <!--            </div>-->
-
-  <!--            &lt;!&ndash; If we need navigation buttons &ndash;&gt;-->
-  <!--            <div class="steps__swiper-button-prev swiper-button-prev"></div>-->
-  <!--            <div class="steps__swiper-button-next swiper-button-next"></div>-->
-  <!--          </div>-->
-
-  <!--        </div>-->
-  <!--        <div class="col-70">-->
-  <!--          &lt;!&ndash; Slider main container &ndash;&gt;-->
-  <!--          <div class="swiper-container">-->
-  <!--            &lt;!&ndash; Additional required wrapper &ndash;&gt;-->
-  <!--            <div class="swiper-wrapper swiper-no-swiping">-->
-  <!--              &lt;!&ndash; Slides &ndash;&gt;-->
-  <!--              <div class="swiper-slide">-->
-  <!--                <img src="img/project.jpg" alt="">-->
-  <!--              </div>-->
-  <!--              <div class="swiper-slide">-->
-  <!--                <img src="img/project.jpg" alt="">-->
-  <!--              </div>-->
-  <!--              <div class="swiper-slide">-->
-  <!--                <img src="img/project.jpg" alt="">-->
-  <!--              </div>-->
-  <!--            </div>-->
-  <!--          </div>-->
-  <!--          &lt;!&ndash; /.col-50 &ndash;&gt;-->
-  <!--        </div>-->
-  <!--        &lt;!&ndash; /.row &ndash;&gt;-->
-  <!--      </div>-->
-  <!--      &lt;!&ndash; /.container &ndash;&gt;-->
-  <!--    </div>-->
-  <!--  </section>-->
-  <!--  &lt;!&ndash; /.section section-dark steps &ndash;&gt;-->
 </main>
 
 <footer class="footer section-dark">
@@ -521,15 +458,13 @@
           Прямой телефон +7 (999) 768 32 99
         </h3>
         <div class="footer__icons">
-          <a href="#"><img src="img/footer-icon1.png" alt=""></a>
-          <a href="#"><img src="img/footer-icon2.png" alt=""></a>
+          <a href="#"><img data-src="img/footer-icon1.png" class="lazyload" alt=""></a>
+          <a href="#"><img data-src="img/footer-icon2.png" class="lazyload" alt=""></a>
         </div>
       </div>
       <div class="map-container">
-        <div class="map footer__map" id="map">
-        </div>
+        <div class="map footer__map" id="map"></div>
         <!-- /.map footer__map -->
-
       </div>
     </div>
 
